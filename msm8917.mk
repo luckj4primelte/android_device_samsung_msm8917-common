@@ -253,25 +253,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
     
-# NFC
-PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.1:32 \
-    android.hardware.nfc@1.1-service.samsung8917 \
-    com.android.nfc_extras \
-    com.gsma.services.nfc \
-    com.nxp.nfc.nq \
-    nfc_nci.nqx.default \
-    nqnfcee_access.xml \
-    NfcNci \
-    Tag \
-    vendor.nxp.nxpnfc@1.0:32 \
-    vendor.nxp.hardware.nfc@1.0-service.samsung8917
-    
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-    $(LOCAL_PATH)/nfc/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    $(LOCAL_PATH)/nfc/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp.conf
-    
 # OMX
 PRODUCT_PACKAGES += \
     libmm-omxcore \
